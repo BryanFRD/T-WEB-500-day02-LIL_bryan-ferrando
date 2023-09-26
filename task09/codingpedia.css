@@ -4,15 +4,20 @@
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 body {
-  background-color: gray;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   height: 100vh;
+}
+
+body>div {
+  flex: 1;
+  display: flex;
 }
 
 header {
@@ -21,18 +26,14 @@ header {
 }
 
 header {
-  flex: 1 1 100%;
   align-self: flex-start;
 }
 
 footer {
-  width: 100%;
-  align-self: flex-end;
   text-align: center;
 }
 
 main {
-  height: auto;
   flex: 4;
 }
 
@@ -47,18 +48,19 @@ form div {
   grid-template-columns: 2fr 8fr;
 }
 
+form div:last-child {
+  grid-template-columns: 1fr;
+}
+
 form div div {
   display: flex;
   width: auto;
 }
 
-form div input, textarea, select {
-  width: 75%;
-}
-
 form button[type="submit"] {
   width: 200px;
   margin-left: auto;
+  grid-auto-rows: auto;
 }
 
 aside {
@@ -66,7 +68,6 @@ aside {
 }
 
 .box {
-  background-color: white;
   margin: 10px;
   padding: 0 10px;
   border: 2px solid black;
