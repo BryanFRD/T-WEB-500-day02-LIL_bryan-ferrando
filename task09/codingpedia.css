@@ -23,8 +23,6 @@ body>div {
 header {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  width: 100%;
-  align-self: flex-start;
 }
 
 footer {
@@ -73,7 +71,7 @@ aside {
 
 nav {
   border: 1px solid;
-  justify-self: end;
+  justify-self: flex-end;
 }
 
 nav ul {
