@@ -23,9 +23,7 @@ body>div {
 header {
   display: grid;
   grid-template-columns: 5fr 1fr;
-}
-
-header {
+  width: 100%;
   align-self: flex-start;
 }
 
@@ -75,6 +73,7 @@ aside {
 
 nav {
   border: 1px solid;
+  justify-self: end;
 }
 
 nav ul {
