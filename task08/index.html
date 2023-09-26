@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodingPedia</title>
+  <link rel="stylesheet" href="codingpedia.css">
+</head>
+<body>
+  <header class="box">
+    <h1>Welcome to CodingPedia!</h1>
+    <nav class="box">
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="php.html">PHP</a></li>
+        <li><a href="sql.html">SQL</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="box">
+    <div class="moving-square"></div>
+    <p>CodingPedia is a collective encyclopedia project on the Internet aiming to be universal
+      and multi - lingual which functions as a wiki .
+      CodingPedia has for goal to offer freely reusable objective and verifiable content that
+      anyone can modify and improve .</p>
+    <article>
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="firstname">First name:</label>
+          <input id="firstname" name="firstname" type="text" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="age">Age:</label>
+          <input id="age" name="age" type="number" min="3" max="99">
+        </div>
+        <div>
+          <label for="phone">Phone:</label>
+          <input id="phone" name="phone" type="tel">
+        </div>
+        <div>
+          <label for="sex">Sex:</label>
+          <input id="sexMale" name="sex" type="radio" checked>male
+          <input id="sexFemale" name="sex" type="radio">female
+        </div>
+        <div>
+          <label for="hairColor">Hair color:</label>
+          <input id="hairColor" name="hair_color" type="color">
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input id="date" name="date" type="date" required value="2023-09-26">
+        </div>
+        <div>
+          <label for="technology">Technology:</label>
+          <select id="technology" name="technology">
+            <option value="sql">SQL</option>
+            <option value="php">PHP</option>
+          </select>
+        </div>
+        <div>
+          <label for="question">Question:</label>
+          <textarea id="question" name="question" cols="30" rows="1" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </article>
+  </main>
+  <aside class="box">
+    My name is Bryan, I'm from France and I'm actually a student at Epitech
+  </aside>
+  <footer class="box">
+    <address>
+      Written by: Ferrando Bryan
+      Contact at: <a href="mailto:bryan.ferrando@epitech.eu">bryan.ferrando@epitech.eu</a>
+       <a href="tel:+33769315891">07.69.31.58.91</a>
+    </address>
+  </footer>
+</body>
+</html>
