@@ -1,0 +1,28 @@
+body {
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  flex: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+main {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+}
+
+.box {
+  background-color: white;
+  margin: 10px;
+  padding: 0 10px;
+}
