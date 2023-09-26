@@ -1,20 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+}
+
 body {
   background-color: gray;
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
-header, footer {
-  flex: 100%;
+header {
   display: grid;
   grid-template-columns: 5fr 1fr;
 }
 
+header {
+  flex: 1 1 100%;
+  align-self: flex-start;
+}
+
+footer {
+  width: 100%;
+  align-self: flex-end;
+  text-align: center;
+}
+
 main {
+  height: auto;
   flex: 4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form div {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+form div div {
+  display: flex;
+  width: auto;
+}
+
+form div input, textarea, select {
+  width: 75%;
+}
+
+form button[type="submit"] {
+  width: 200px;
+  margin-left: auto;
 }
 
 aside {
@@ -25,6 +69,25 @@ aside {
   background-color: white;
   margin: 10px;
   padding: 0 10px;
+  border: 2px solid black;
+}
+
+nav {
+  border: 1px solid;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+}
+
+nav ul li {
+  padding: 5px;
+}
+
+nav ul li:hover {
+  background-color: lightgrey;
 }
 
 .moving-square {
