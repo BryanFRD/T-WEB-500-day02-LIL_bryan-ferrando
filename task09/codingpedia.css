@@ -56,7 +56,7 @@ form div div {
 }
 
 form button[type="submit"] {
-  width: 200px;
+  width: 300px;
   margin-left: auto;
   grid-auto-rows: auto;
 }
